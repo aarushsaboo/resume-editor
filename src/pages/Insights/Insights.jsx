@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link } from "react-router-dom"
 import {
   faFileCircleCheck,
   faCloudArrowUp,
@@ -176,10 +177,14 @@ ${jobDescription}
           prompt = `
 You are an expert ATS optimization consultant with years of experience in resume writing and ATS systems.
 Based on the resume provided and the job description, provide 5 specific, actionable tips to improve the resume 
-for better ATS compatibility. For each tip, explain why it's important and give a concrete example of how to implement it.
-Focus on keyword optimization, formatting, section organization, and any critical missing elements.
+for better ATS compatibility.
 
-Format your response with HTML headings (<h4>) for each tip title, followed by paragraphs (<p>) for the explanations.
+Present each tip as follows:
+<h4>Tip Title Goes Here</h4>
+<p>Explanation of the tip with concrete examples of how to implement it.</p>
+
+Focus on keyword optimization, formatting, section organization, and any critical missing elements.
+Make sure to use proper HTML tags (<h4> for titles and <p> for paragraphs) for formatting.
 
 Job Description:
 ${jobDescription}
@@ -274,21 +279,23 @@ ${jobDescription}
         <div className={styles.container}>
           <nav className={styles.nav}>
             <div className={styles.logo}>
-              <FontAwesomeIcon
-                icon={faFileCircleCheck}
-                className={styles.logoIcon}
-              />
-              Resume editor
+              <Link to="/" className={styles.logo}>
+                <FontAwesomeIcon
+                  icon={faFileCircleCheck}
+                  className={styles.logoIcon}
+                />
+                Resume editor
+              </Link>
             </div>
             <ul className={styles.navLinks}>
               <li>
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">Features</a>
+                <a href="/insights">Resume Insights</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="/features">About</a>
               </li>
             </ul>
           </nav>

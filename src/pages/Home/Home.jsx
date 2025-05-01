@@ -1,6 +1,8 @@
 import styles from './Home.module.css';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom"
+
 import {
   faFileCircleCheck,
   faRobot,
@@ -19,14 +21,17 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.container}>
           <nav className={styles.nav}>
-            <div className={styles.logo}>
+            <div className={styles.logo} >
+              <Link to="/" className={styles.logo}>
+
               <FontAwesomeIcon icon={faFileCircleCheck} className={styles.logoIcon} />
-              Resume editor
+                Resume editor
+                </Link>
             </div>
             <ul className={styles.navLinks}>
-              <li><a href="#">Features</a></li>
+              <li><a href="/insights">Features</a></li>
               
-              <li><a href="#">About</a></li>
+              <li><a href="/features">About</a></li>
             </ul>
             <button className={styles.ctaButton} onClick={() => navigate('/resume-editor')}>
               Start Optimizing
