@@ -1,0 +1,78 @@
+.resumeWorkspace {
+  background-color: white;
+  min-width: 950px;
+  max-width: 800px;
+  width: 800px;
+  padding: 36px 60px;
+  border-radius: 14px;
+  right: 18%;
+  top: 20%;
+  position: absolute;
+}
+
+.resumeContent {
+  margin-bottom: 2.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* education */
+.education, .projectExperience, .leadershipExperience, .customSection {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.leftIcon {
+  padding-right: 0.2em;
+}
+
+.rightIcon {
+  padding-left: 0.2rem;
+}
+
+.container {
+width: 100%;
+margin-top: 0.125rem;
+position: relative;
+}
+
+.exportButton {
+position: absolute;
+top: 20px;
+right: -20%;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+z-index: 10;
+transition: background-color 0.3s ease;
+}
+
+.exportButton:hover {
+background-color: #45a049;
+}
+
+/* Main Content wrapper for proper positioning */
+.mainContent {
+  position: relative;
+  margin-top: 100px; /* Adjusted to account for the fixed toolbar and Navbar */
+}
+
+/* Fixed Toolbar styling */
+.fixedToolbar {
+  position: fixed;
+  top: 60px; /* Adjust this value based on the Navbar's height */
+  height: 30px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 6px;
+  margin-left: 50px;
+}

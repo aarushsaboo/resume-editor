@@ -1,0 +1,79 @@
+.customSection {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.container2 {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 3.5px;
+  width: 100%;
+}
+
+.container2:not(:first-child) {
+  margin-top: 3.5px; /* Add margin only between items */
+}
+
+.fieldGroup {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.untitled1 {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.input {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  min-width: 30px;
+  width: 50px;
+  outline: none;
+}
+
+.colon {
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  margin: 0 4px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: -1px;
+}
+
+.untitled2 {
+  position: relative;
+  flex: 1;
+  min-width: 50px;
+}
+
+.textarea {
+  border: none;
+  background: transparent;
+  resize: none;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  outline: none;
+  height: 16px; /* Exact single line height */
+  line-height: normal;
+  display: block;
+  overflow: hidden;/* Set to match single line height */
+  min-height: 16px;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: rgb(156 163 175);
+}

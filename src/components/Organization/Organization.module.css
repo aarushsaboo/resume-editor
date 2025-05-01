@@ -1,0 +1,97 @@
+
+/* Updated CSS */
+.organization {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.part1 {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.part2 {
+    /* display: flex;
+    align-items: center;
+    margin-left: auto; */
+}
+
+.textContent, .cityState {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    font-size: 14px;
+    text-transform: unset;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 20.5px;
+    text-align: left;
+    position: relative;
+    display: flex;
+}
+
+.inputWrapper {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border-radius: 2px;
+    transition: background-color 0.15s ease;
+    white-space: nowrap;
+}
+
+.inputWrapper:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.input {
+    border: none;
+    outline: none;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    color: black;
+    cursor: text;
+}
+
+.input.rightAligned {
+    text-align: right;
+}
+
+.input::placeholder {
+    color: rgb(156 163 175);
+}
+
+.input:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 1px rgba(156, 163, 175, 0.2);
+}
+
+.addIcon {
+    cursor: pointer;
+    margin-left: 4px;
+    margin-top: 0px;
+}
+
+.cityState {
+    font-size: 14px;
+    text-transform: unset;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 21.5px;
+    text-align: right;
+}
+
+.hiddenText {
+    visibility: hidden;
+    position: absolute;
+    white-space: pre;
+    font-family: inherit;
+    font-size: inherit;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,66 @@
+
+/* BulletContainer.module.css */
+.bulletContainer {
+    width: 100%;
+}
+
+.bullet {
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 20.5px;
+    text-align: left;
+    min-width: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.bulletWrapper {
+    position: relative;
+    padding-left: 19px;
+}
+
+.bulletWrapper::before {
+    content: '•';
+    color: #9ca3af;  /* Default grey bullet */
+    position: absolute;
+    left: 4px;
+    top: 0;
+}
+
+.bulletWrapper.hasContent::before {
+    color: #000;  /* Black bullet only when content exists */
+}
+
+.bulletInput {
+    width: auto;
+    min-width: 20px;
+    margin: 0 -4px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    color: black;
+    border-radius: 2px;
+    cursor: text;
+    transition: background-color 0.15s ease;
+    display: block;
+    overflow: hidden;
+    resize: none;
+    padding: 0;
+    height: auto;
+}
+
+.bulletInput::placeholder {
+    color: #9ca3af;
+}
+
+.bulletInput:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.bulletInput:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 1px rgba(156, 163, 175, 0.2);
+}

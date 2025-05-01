@@ -1,0 +1,128 @@
+.personal {
+    cursor: pointer;
+    min-width: 20px;
+}
+
+.nameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.name {
+    position: relative;
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    display: inline-block;
+    padding: 4px;
+}
+
+.nameInput {
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.container {
+    padding-bottom: 1px;
+    padding-top: 1px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.otherPersonalDetailsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.otherPersonalDetails {
+    position: relative;
+    display: inline-block;
+    padding: 4px;
+}
+
+.detailsInput {
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 20.5px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.hiddenText {
+    visibility: hidden;
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    height: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* Hover styles */
+.name:hover,
+.otherPersonalDetails:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Input focus styles */
+.nameInput:focus,
+.detailsInput:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 1px rgba(156, 163, 175, 0.2);
+}
+
+/* In Personal.module.css */
+
+/* For the name input */
+.name .hiddenText {
+    visibility: hidden;
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    height: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;  /* Match nameInput explicitly */
+    font-weight: bold;  /* Match nameInput explicitly */
+    line-height: inherit;
+}
+
+/* For the details input */
+.otherPersonalDetails .hiddenText {
+    visibility: hidden;
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    height: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;  /* Match detailsInput explicitly */
+    font-weight: inherit;
+    line-height: 20.5px;  /* Match detailsInput explicitly */
+}

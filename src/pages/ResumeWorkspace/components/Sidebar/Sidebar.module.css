@@ -1,0 +1,29 @@
+
+/* Sidebar Styles */
+.sidebar {
+    width: 60px;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    padding-left: 10px;
+    padding-top: 30px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 56px; /* match navbar height */
+}
+
+.sidebarButton {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #000000;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

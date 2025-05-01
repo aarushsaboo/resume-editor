@@ -1,0 +1,139 @@
+.degree {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    display: flex;
+}
+
+.part1 {
+    font-style: italic;
+    align-items: center;
+    display: flex;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.text {
+    font-size: 14px;
+    text-transform: unset;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 20.5px;
+    text-align: left;
+    position: relative;
+    display: flex;
+}
+
+.inputWrapper {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border-radius: 2px;
+    transition: background-color 0.15s ease;
+    white-space: nowrap;
+}
+
+.input {
+    border: none;
+    outline: none;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    color: black;
+    cursor: text;
+    font-style: italic;
+}
+
+.input::placeholder {
+    color: rgb(156 163 175);
+}
+
+.input:hover{
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.input:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 1px rgba(156, 163, 175, 0.2);
+}
+
+.hiddenText {
+    visibility: hidden;
+    position: absolute;
+    white-space: pre;
+    font-family: inherit;
+    font-size: inherit;
+    top: 0;
+    left: 0;
+}
+
+.part2 {
+    align-items: center;
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.graduationDate {
+    font-size: 14px;
+    text-transform: unset;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 20.5px;
+    font-weight: 400;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.datePickerWrapper {
+    position: relative;
+    display: inline-flex;
+}
+
+.dateText {
+    display: inline-block;
+    transition: background-color 0.15s ease;
+    border-radius: 2px;
+}
+
+.dateText:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.pickerContainer {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 10;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+}
+
+.dateSeparator {
+    margin: 0 4px;
+}
+
+/* Custom styles for react-datepicker */
+:global(.react-datepicker) {
+    font-family: "Times New Roman", Times, serif !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+:global(.react-datepicker__month-text) {
+    font-family: "Times New Roman", Times, serif !important;
+    color: rgb(156 163 175) !important;
+}
+
+:global(.react-datepicker__month-text--selected) {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    color: black !important;
+}

@@ -1,0 +1,80 @@
+.formattingToolbar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .group button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+  }
+  
+  .group button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .group button:active {
+    background-color: #d9d9d9;
+  }
+  
+  /* For disabled buttons */
+  .group button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 24px;
+    background-color: #ddd;
+    margin: 0 8px;
+  }
+  
+  .pageInfo, .zoomValue {
+    font-size: 14px;
+    margin: 0 8px;
+    min-width: 40px;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .formattingToolbar {
+      padding: 6px;
+    }
+    
+    .group button {
+      padding: 4px 6px;
+      font-size: 12px;
+    }
+    
+    .divider {
+      margin: 0 4px;
+    }
+    
+    .pageInfo, .zoomValue {
+      margin: 0 4px;
+      min-width: 30px;
+    }
+  }

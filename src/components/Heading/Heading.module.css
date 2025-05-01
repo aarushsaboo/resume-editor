@@ -1,0 +1,88 @@
+.heading{
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+  width: 100%;
+    border-bottom: 1.7094px solid rgb(0, 0, 0); 
+}
+
+.part1{
+    position: relative;
+    
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 20.5px;
+    /* border */
+    
+    padding-bottom: 1.7094px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-right: 0.2em; for svg */
+}
+
+.part1 p{
+    min-width: 20px;
+    cursor: pointer;
+}
+/* leave room for outline */
+
+
+.rightIcon{
+    padding-left: .2em;
+}
+.rightIcon svg{
+    width: 16px; height: 16px; left: 100%;
+    cursor: pointer;
+    display: block;
+    vertical-align: middle;
+}
+
+.moveSvg{
+    
+    display: block;
+    vertical-align: middle;
+    cursor: move;
+}
+
+.headingInput {
+  min-width: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  line-height: 20.5px;
+}
+
+.hiddenText {
+  visibility: hidden;
+  position: absolute;
+  white-space: pre;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 20.5px;
+}
+
+
+.headingInput::placeholder {
+    color: rgb(156 163 175);
+}
+
+.headingInput:hover{
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.headingInput:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 1px rgba(156, 163, 175, 0.2);
+}
