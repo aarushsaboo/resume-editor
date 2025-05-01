@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import ResumeEditor from './pages/ResumeWorkspace/ResumeWorkspace';
+import Insights from './pages/Insights/Insights';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resume-editor" element={<ResumeEditor />} />
+        <Route path="/insights" element={<Insights />} />
 
 
         {/* Add more routes here if needed */}

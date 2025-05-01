@@ -44,7 +44,7 @@ export default function Home() {
                 <p className={styles.heroDescription}>
                   Our AI-powered tool analyzes your resume against ATS systems, provides real-time scoring, and helps you optimize to land more interviews.
                 </p>
-                <button className={styles.ctaButton} onClick={() => navigate('/resume-editor')}>
+                <button className={styles.ctaButton} onClick={() => navigate('/insights')}>
                   Upload Your Resume
                 </button>
               </div>
