@@ -47,7 +47,7 @@ export default function Home() {
               <div className={styles.heroContent}>
                 <h1 className={styles.heroTitle}>Get Your Resume <span>ATS-Ready</span> in Minutes</h1>
                 <p className={styles.heroDescription}>
-                  Our AI-powered tool analyzes your resume against ATS systems, provides real-time scoring, and helps you optimize to land more interviews.
+                  Our tool analyzes your resume against ATS systems, provides real-time scoring, and helps you optimize to land more interviews.
                 </p>
                 <button className={styles.ctaButton} onClick={() => navigate('/insights')}>
                   Upload Your Resume
@@ -173,10 +173,7 @@ export default function Home() {
             {[
               {
                 title: 'Product',
-                links: ['Features', 'Pricing', 'Testimonials', 'FAQ']
-              }, {
-                title: 'Company',
-                links: ['About Us', 'Blog', 'Careers', 'Contact']
+                links: ['Features', 'FAQ']
               }, {
                 title: 'Resources',
                 links: ['Resume Tips', 'Career Advice', 'Interview Prep', 'Job Search Guide']
@@ -193,7 +190,7 @@ export default function Home() {
             ))}
           </div>
           <div className={styles.copyright}>
-            &copy; 2025 Resume editor. All rights reserved.
+            &copy; Group 31. KJSCE. All rights reserved.
           </div>
         </div>
       </footer>

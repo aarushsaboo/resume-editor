@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import {
   faFileCircleCheck,
   faRobot,
@@ -107,15 +108,31 @@ export default function Features() {
         <div className={styles.container}>
           <nav className={styles.nav}>
             <div className={styles.logo}>
-              <FontAwesomeIcon icon={faFileCircleCheck} className={styles.logoIcon} />
-              Resume editor
+              <Link to="/" className={styles.logo}>
+                <FontAwesomeIcon
+                  icon={faFileCircleCheck}
+                  className={styles.logoIcon}
+                />
+                Resume editor
+              </Link>
             </div>
             <ul className={styles.navLinks}>
-              <li><a href="/">Home</a></li>
-              <li><a href="/insights">Resume Insights</a></li>
-              <li><a href="/features"  className={styles.active}>About</a></li>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/insights">Resume Insights</a>
+              </li>
+              <li>
+                <a href="/features" className={styles.active}>
+                  About
+                </a>
+              </li>
             </ul>
-            <button className={styles.ctaButton} onClick={() => navigate('/resume-editor')}>
+            <button
+              className={styles.ctaButton}
+              onClick={() => navigate("/resume-editor")}
+            >
               Start Optimizing
             </button>
           </nav>
@@ -125,9 +142,12 @@ export default function Features() {
       <main>
         <section className={styles.heroSection}>
           <div className={styles.container}>
-            <h1 className={styles.heroTitle}>Powerful Features to <span>Optimize Your Resume</span></h1>
+            <h1 className={styles.heroTitle}>
+              Powerful Features to <span>Optimize Your Resume</span>
+            </h1>
             <p className={styles.heroDescription}>
-              Discover all the tools and features designed to help you create an ATS-friendly resume that stands out to employers.
+              Discover all the tools and features designed to help you create an
+              ATS-friendly resume that stands out to employers.
             </p>
           </div>
         </section>
@@ -141,7 +161,9 @@ export default function Features() {
                 </div>
                 <div className={styles.featureContent}>
                   <h3 className={styles.featureTitle}>{feature.title}</h3>
-                  <p className={styles.featureDescription}>{feature.description}</p>
+                  <p className={styles.featureDescription}>
+                    {feature.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -151,11 +173,17 @@ export default function Features() {
         <section className={styles.ctaSection}>
           <div className={styles.container}>
             <div className={styles.ctaContent}>
-              <h2 className={styles.ctaTitle}>Ready to Optimize Your Resume?</h2>
+              <h2 className={styles.ctaTitle}>
+                Ready to Optimize Your Resume?
+              </h2>
               <p className={styles.ctaDescription}>
-                Start improving your resume's ATS compatibility score today and increase your chances of landing interviews.
+                Start improving your resume's ATS compatibility score today and
+                increase your chances of landing interviews.
               </p>
-              <button className={styles.ctaButton} onClick={() => navigate('/resume-editor')}>
+              <button
+                className={styles.ctaButton}
+                onClick={() => navigate("/resume-editor")}
+              >
                 Try It Now
               </button>
             </div>
@@ -170,25 +198,37 @@ export default function Features() {
               <div className={styles.footerLogo}>
                 <FontAwesomeIcon icon={faFileCircleCheck} /> Resume editor
               </div>
-              <p className={styles.footerDescription}>Helping job seekers beat the ATS and land more interviews with AI-powered resume optimization.</p>
+              <p className={styles.footerDescription}>
+                Helping job seekers beat the ATS and land more interviews with
+                AI-powered resume optimization.
+              </p>
             </div>
             {[
               {
-                title: 'Product',
-                links: ['Features', 'Pricing', 'Testimonials', 'FAQ']
-              }, {
-                title: 'Company',
-                links: ['About Us', 'Blog', 'Careers', 'Contact']
-              }, {
-                title: 'Resources',
-                links: ['Resume Tips', 'Career Advice', 'Interview Prep', 'Job Search Guide']
-              }
+                title: "Product",
+                links: ["Features", "Pricing", "Testimonials", "FAQ"],
+              },
+              {
+                title: "Company",
+                links: ["About Us", "Blog", "Careers", "Contact"],
+              },
+              {
+                title: "Resources",
+                links: [
+                  "Resume Tips",
+                  "Career Advice",
+                  "Interview Prep",
+                  "Job Search Guide",
+                ],
+              },
             ].map((section, i) => (
               <div key={i} className={styles.footerLinks}>
                 <h3>{section.title}</h3>
                 <ul>
                   {section.links.map((link, j) => (
-                    <li key={j}><a href="#">{link}</a></li>
+                    <li key={j}>
+                      <a href="#">{link}</a>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -200,5 +240,5 @@ export default function Features() {
         </div>
       </footer>
     </div>
-  );
+  )
 }

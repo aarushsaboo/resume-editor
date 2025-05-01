@@ -50,6 +50,7 @@ body {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--primary);
+  text-decoration: none;
 }
 
 .logoIcon {
